@@ -1329,6 +1329,7 @@ SYSCALL_NUM equ (($-.switch)/4)
 align 16
 
 .xplode:
+xor edx,edx
 int3	;trigger TSS gate
 
 jmp .end
